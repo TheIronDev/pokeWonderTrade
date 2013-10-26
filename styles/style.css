@@ -8,7 +8,7 @@
 html{font-family: 'Open Sans', sans-serif;}
 html,body{padding: 0;margin: 0;}
 h1,h2,h3{font-family: Steelworks;margin: 0;}
-h1{text-align: center;padding: 1em 0;color:rgb(60, 107, 118);text-shadow: 1px 1px 1px #efefef;}
+h1{text-align: center;padding: 1em 0;color:rgb(60, 107, 118);text-shadow: 1px 1px 1px #efefef;line-height: 1.3em;}
 h3{padding: 0.5em}
 section{padding: 0.5em;margin: 0 0 1em;text-shadow:1px 1px 1px #ccc;}
 .inverse{background: rgba(0,0,0,.9);color:#efefef;text-shadow:none;}
@@ -22,3 +22,5 @@ footer{font-size: 0.9em;}
 
 .experiment-steps{padding: 0;list-style: none;overflow: hidden;}
 .experiment-steps li{float: left;width: 100%;max-width: 25%;text-align: center;}
+
+.experiment-data{background: #fff;color: #000;padding: 0.5em;}
