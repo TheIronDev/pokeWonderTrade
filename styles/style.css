@@ -1,9 +1,17 @@
 /* Temporary css... */
-html{}
+@font-face {
+    font-family: Steelworks;
+    src: url("SteelworksBook.otf");
+    font-weight:400;
+}
+
+html{font-family: 'Open Sans', sans-serif;}
 html,body{padding: 0;margin: 0;}
-h1{text-align: center;margin: 0;padding: 1em 0}
-section{padding: 0.5em;margin: 0 0 1em}
-.inverse{background: rgba(0,0,0,.9);color:#efefef}
+h1,h2,h3{font-family: Steelworks;margin: 0;}
+h1{text-align: center;padding: 1em 0;color:rgb(60, 107, 118);text-shadow: 1px 1px 1px #efefef;}
+h3{padding: 0.5em}
+section{padding: 0.5em;margin: 0 0 1em;text-shadow:1px 1px 1px #ccc;}
+.inverse{background: rgba(0,0,0,.9);color:#efefef;text-shadow:none;}
 section header{font-size: 1.5em;font-weight: bold;}
 sub{display: block;}
 footer{font-size: 0.9em;}
@@ -11,3 +19,6 @@ footer{font-size: 0.9em;}
 
 .container{margin: 0 auto;width: auto;max-width: 960px;}
 .pageBackground{background: url(../images/background.jpg) no-repeat bottom right #bf8e5e;background-size:contain;height: 100%;position: fixed;z-index: -1;width: 100%;}
+
+.experiment-steps{padding: 0;list-style: none;overflow: hidden;}
+.experiment-steps li{float: left;width: 100%;max-width: 25%;text-align: center;}
