@@ -16,11 +16,14 @@ require(['jquery', 'highcharts'], function($, highcharts){
 			credits: {
 				enabled: false
 			},
+			chart: {
+				height: 800
+			},
 	        title: {
 	            text: 'Wonder Shares by Pokemon'
 	        },
 	        tooltip: {
-	    	    pointFormat: '{series.name} : <b>{point.percentage:.1f}%</b>'
+	    	    pointFormat: '{series.name} : <b>{point.y} ({point.percentage:.1f}%)</b>'
 	        },
 	        plotOptions: {
 	            pie: {
@@ -191,7 +194,7 @@ require(['jquery', 'highcharts'], function($, highcharts){
 				enabled: false
 			},
 	        tooltip: {
-	    	    pointFormat: '{series.name} aa: <b>{point.percentage:.1f}%</b>'
+	    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
 	        },
 	        plotOptions: {
 	            pie: {
@@ -212,6 +215,127 @@ require(['jquery', 'highcharts'], function($, highcharts){
 	                ['Guys',   216],
 	                ['Girls', 84]
 	            ]
+	        }]
+	    });
+
+	    $('#chart-byCountry').highcharts({
+	        title: {
+	            text: 'Wonder Shares by Country'
+	        },
+	        chart: {
+				height: 800
+			},
+	        credits: {
+				enabled: false
+			},
+	        tooltip: {
+	    	    pointFormat: '<b>{point.y}</b>'
+	        },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    color: '#000000',
+	                    connectorColor: '#000000',
+	                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+	                }
+	            }
+	        },
+	        series: [{
+	            type: 'pie',
+	            name: 'Country',
+	            data: [
+					[ 'Switzerland', 1 ],
+					[ 'Poland', 1 ],
+					[ 'Austria', 1 ],
+					[ 'Singapore', 1 ],
+					[ 'Portugal', 1 ],
+					[ 'Anguilla', 1 ],
+					[ 'Peru', 1 ],
+					[ 'South Korea', 2 ],
+					[ 'Sweden', 2 ],
+					[ 'Greece', 2 ],
+					[ 'Netherlands', 3 ],
+					[ 'Belgium', 3 ],
+					[ 'Norway', 3 ],
+					[ 'Brazil', 4 ],
+					[ 'Mexico', 4 ],
+					[ 'Spain', 5 ],
+					[ 'France', 5 ],
+					[ 'Italy', 7 ],
+					[ 'Australia', 8 ],
+					[ 'Germany', 9 ],
+					[ 'Canada', 12 ],
+					[ 'United Kingdom', 12 ],
+					[ 'Japan', 75 ],
+					[ 'United States', 137 ]
+  				]
+	        }]
+	    });
+
+		$('#chart-byUSA').highcharts({
+	        title: {
+	            text: 'Wonder Shares within USA'
+	        },
+	        credits: {
+				enabled: false
+			},
+	        tooltip: {
+	    	    pointFormat: '<b>{point.y}</b>'
+	        },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: true,
+	                    color: '#000000',
+	                    connectorColor: '#000000',
+	                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+	                }
+	            }
+	        },
+	        series: [{
+	            type: 'pie',
+	            name: 'Country',
+	            data: [
+					[ 'Wisconsin', 1 ],
+					[ 'Tennessee', 1 ],
+					[ 'Arkansas', 1 ],
+					[ 'Illinois', 1 ],
+					[ 'Mississippi', 1 ],
+					[ 'Utah', 1 ],
+					[ 'Kentucky', 1 ],
+					[ 'Nevada', 1 ],
+					[ 'South Carolina', 1 ],
+					[ 'West Virginia', 1 ],
+					[ 'Missouri', 1 ],
+					[ 'Alamaba', 1 ],
+					[ 'Minnesota', 2 ],
+					[ 'Colorado', 2 ],
+					[ 'Washington', 2 ],
+					[ 'Louisiana', 2 ],
+					[ 'Oregon', 2 ],
+					[ 'Idaho', 2 ],
+					[ 'Indiana', 2 ],
+					[ 'Georgia', 2 ],
+					[ 'North Carolina', 3 ],
+					[ 'Maryland', 3 ],
+					[ 'Puerto Rico', 3 ],
+					[ 'Arizona', 3 ],
+					[ 'Pennsylvania', 4 ],
+					[ 'Ohio', 4 ],
+					[ 'Virginia', 5 ],
+					[ 'Massachusetts', 5 ],
+					[ 'Michigan', 6 ],
+					[ 'Florida', 9 ],
+					[ 'New Jersey', 10 ],
+					[ 'Texas', 14 ],
+					[ 'New York', 14 ],
+					[ 'California', 16 ]
+  				]
 	        }]
 	    });
 	});
