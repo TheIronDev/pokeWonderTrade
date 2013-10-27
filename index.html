@@ -16,7 +16,7 @@
 		<div class="container">
 			<header><h3>Intro</h3></header>
 			<p>The mission behind this site is to understand what people put up on Pokemon X/Y's Wonder Trade System. I ran a little experiment on 10/26/2013 between 8am to 6:40pm to see what types of pokemon I got back.</p>
-			<p>If you got an Eevee with a Fire Stone that day, its very likely you were part of my experiment (thanks!)</p>
+			<p><u>If you got an Eevee with a Fire Stone that day, its very likely you were part of my experiment (thanks!)</u></p>
 		</div>
 	</section>
 	<section id="experiment-section">
@@ -36,7 +36,7 @@
 				<div>Record the data</div>
 			</li>
 			<li>
-				<img src="./images/experiment_step4.jpg" title="Thats right, if you are interested in learning more, feel free to checkout the raw json file" />
+				<img src="./images/experiment_step4.jpg" title="Thats right, if you are interested in learning more, feel free to checkout the raw recording data" />
 				<div>Analyze and disseminate the data</div>
 			</li>
 		</ul>
@@ -44,10 +44,11 @@
 	</section>
 	<section id="data-section" class="inverse">
 		<div class="container">
-			<header><h3>The Data</h3></header>
+			<header><h3>The Data <a class="raw-data" href="https://docs.google.com/spreadsheet/ccc?key=0AoJVHM5p2TbTdGdpZi1rdmRRblhNaGxqSjlIT3RRQWc&usp=sharing">[Raw]</a></h3></header>
 			<div class="experiment-data">
 				<div class="chart-wrapper full"><div id="chart-byPokemon"></div></div>
 				<div class="chart-wrapper full"><div id="chart-byCountry"></div></div>
+				<div class="chart-wrapper full"><div id="chart-waitTimes"></div></div>
 				<div class="quick-facts half">
 					<ul>
 						<li class="list-heading">Fun Facts</li>
@@ -116,9 +117,26 @@
 			</div>
 		</div>
 	</section>
+	<section>
+		<div class="container">
+			<header><h3>Inferences and Wrapup</h3></header>
+			<div class="inference-wrapper">
+				<p>So, this was my little experiment. I was half expecting to see the same 3-4 pokemon 30% of the time, but instead I was gladly surprised to see there was a large variety of different pokemon.</p>
+				<p>Different people had different ways of being generous. Some people gave out rare fossil pokemon (Tyrunt), starters (Froakie, Charmanders, Bulbasaur, Chespin), or even pokemon with hidden powers (Protean Froakies come to mind).</p>
+				<p>Items and shinies never appeared to be part of the generousity agenda.</p>
+				<p>Only 1 out of the 300 pokemon wonder traded was a 'trade' evolution, Pumpkaboo. Maybe given enough time more people will have a bigger pokedex and can start sending out pokemon that evolve based on trading (Kadabra, Machoke, Graveler, Haunter, Boldore, Gurdurr, etc.). I'll be honest, seeing the trade evolution happen was the highlight of my afternoon. :)</p>
+				<p>The data doesn't show this, but there were a large number of trainers that were re-gifting wonder trades, which was a bit of a bummer to see.</p>
+				<br/>
+				<p>I mention that this data was gathered from 8am to 6:40pm CDT. Although its great that this data exists... it does not paint a full picture of how the world wonder trades. Looking at the types of wonder trades I received, you'll see I started while Japan was going to sleep, and ended while Japan started to wake up.</p>
+				<p>I also did this experiment on a Saturday. I am certain the average wait time will be significanly different during the work/school week.</p>
+				<p>... I am going to dive a bit deeper and will hopefuly dig up some more relevant graphs.</p>
+				<p>Soo yeeeahh, breeding all these Eevees and recording all this data took a long time (~20 hours). If you found this data interesting let me know! I don't know how soon I will sit down for round 2, but with the help of more people organizing some sort of wonder trade analysis might be feasible! :) </p>
+			</div>
+		</div>
+	</section>
 
 	<div class="container">
-		<footer>This site is by no means affiliated with or endorsed by Nintendo/Gamefreak. This is a fan made site... made be a pokemon Trainer that might have too much time on his hands. The Eevee background is credited to "http://pldh.net/"</footer>
+		<footer>This site is by no means affiliated with or endorsed by Nintendo/Gamefreak. This is a fan made site... made by a pokemon Trainer that might have too much time on his hands. The Eevee background is credited to "http://pldh.net/", and the chart library I used was HighCharts.</footer>
 	</div>
 	<script src="./scripts/require.js" data-main="./scripts/main"></script>	
 </body>
