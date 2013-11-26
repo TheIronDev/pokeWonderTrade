@@ -12,6 +12,8 @@ h1{text-align: center;padding: 1em 0;color:rgb(60, 107, 118);text-shadow: 1px 1p
 h3{padding: 0.5em}
 section{padding: 0.5em;margin: 0 0 1em;text-shadow:1px 1px 1px #ccc;}
 .inverse{background: rgba(0,0,0,.9);color:#efefef;text-shadow:none;}
+.notice{background: rgba(0,0,100,.4);color:#efefef;text-shadow:none;}
+.notice a{color: #ff0}
 section header{font-size: 1.5em;font-weight: bold;}
 sub{display: block;}
 footer{font-size: 0.9em;}
